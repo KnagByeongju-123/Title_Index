@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>전자문서 시스템 안내</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Nanum Gothic', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #4a90e2;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    section h2 {
+      margin-top: 0;
+      color: #4a90e2;
+      border-left: 4px solid #4a90e2;
+      padding-left: 10px;
+      font-size: 1.4rem;
+    }
+    ol, ul {
+      margin: 15px 0 0 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    li ul {
+      margin-top: 5px;
+      list-style-type: disc;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>스마트 검사일보 시스템 안내</h1>
+  </header>
+
+  <div class="container">
+
+    <section id="overview">
+      <h2>1. 시스템 개요</h2>
+      <ol>
+        <li>기존의 종이 체크시트를 대체하여, 스마트폰 또는 PC 브라우저에서 바로 입력 가능한 HTML 폼으로 구성되어 있습니다.</li>
+        <li>입력된 데이터는 Google 스프레드시트에 실시간 기록되고, 필요 시 Excel 파일로 내려받아 전자결재 시스템과 연동할 수 있습니다.</li>
+        <li>이를 통해 현장 검사 &rarr; 데이터 수집 &rarr; 전자결재에 이르는 전 과정을 디지털화하여, 업무 속도와 투명성을 향상시킵니다.</li>
+      </ol>
+    </section>
+
+    <section id="tips">
+      <h2>2. 사용상 팁</h2>
+      <ul>
+        <li>PC 사용 시에는 브라우저 창 폭을 좁혀 모바일 화면처럼 보시면 입력이 편리합니다.</li>
+        <li>Android 환경에서는 Chrome 브라우저에서 최적화되어 동작합니다.  
+          <ul>
+            <li>카카오톡 내장 브라우저로 열면 QR 리더 기능이 제한될 수 있습니다.</li>
+          </ul>
+        </li>
+        <li>카톡 등에서 받은 바로가기를 Chrome으로 열어 홈화면에 추가해두시면 빠르게 접근 가능합니다.</li>
+        <li>PC 환경에서는 주소창 옆 자물쇠 아이콘을 드래그 앤 드롭하여 바탕화면에 바로가기를 생성할 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section id="registration">
+      <h2>3. 등록</h2>
+      <ol>
+        <li>HTML 폼을 열고 순서대로 항목을 입력합니다.</li>
+        <li>날짜 입력란은 오늘 날짜를 자동으로 가져옵니다.</li>
+        <li>이름은 드롭다운에서 선택하거나 직접 입력할 수 있습니다.</li>
+        <li>검사 결과 항목은 클릭하여 OK/NG를 선택합니다.</li>
+        <li>QR 코드 스캔 시 권한 요청이 뜨면 ‘허용’해 주세요.</li>
+        <li>일부 폼은 QR 스캔 후 자동으로 시간이 등록되거나 선택 버튼이 활성화됩니다.</li>
+        <li>비고란에는 추가로 기록할 내용을 자유롭게 입력합니다.</li>
+        <li>제출 버튼은 한 번만 클릭하고, 완료 메시지가 뜰 때까지 약 4초간 기다려 주세요.</li>
+      </ol>
+    </section>
+
+    <section id="review">
+      <h2>4. 조회</h2>
+      <ol>
+        <li>입력한 데이터가 Google 스프레드시트에 정상 등록되었는지 확인합니다.</li>
+        <li>오류가 있을 경우 관리자에게 수정 요청을 하시면 빠르게 반영됩니다.</li>
+      </ol>
+    </section>
+
+    <section id="download">
+      <h2>5. 엑셀 다운로드</h2>
+      <ol>
+        <li>Excel 파일로 ‘다운로드’ 폴더에 내려받기 됩니다.</li>
+        <li>PC 및 스마트폰 모두 가능하며, 비밀번호가 설정되어 있습니다.</li>
+        <li>시작일자/종료일자는 8자리 숫자(YYYYMMDD)로 입력 후 Enter를 누르면 진행됩니다.</li>
+        <li>주기적으로 파일을 다운로드 받아 보관·정리해 두세요.</li>
+      </ol>
+    </section>
+
+    <section id="approval">
+      <h2>6. 전자결재</h2>
+      <ol>
+        <li>필요 시 전자문서 결재 기능을 활용합니다.</li>
+        <li>결재선은 1차 ~ 3차까지 설정할 수 있습니다.</li>
+        <li>결재 신청 시 자동으로 메일이 발송되고, 1~3차 결재자에게 순차 전송됩니다.</li>
+        <li>최종 승인 완료 시 신청자에게 승인 완료 메일(PDF 첨부) 이 전송됩니다.</li>
+        <li>승인자는 메일 내 링크를 통해 웹창에서 승인 또는 반려 후 창을 닫아주시면 됩니다.</li>
+      </ol>
+    </section>
+
+    <section id="others">
+      <h2>7. 기타</h2>
+      <ul>
+        <li>시스템 이용 중 문의·클레임은 강병주 팀장 (seraulu@nate.com)에게 메일로 요청해 주세요.</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 (주)태진다이텍 전자문서 Potal 
+  </footer>
+
+</body>
+</html>
